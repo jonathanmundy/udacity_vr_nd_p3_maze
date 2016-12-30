@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour 
 {
     //Create a reference to the CoinPoofPrefab
+	public GameObject coinPoof;
 
     public void OnCoinClicked() {
         // Instantiate the CoinPoof Prefab where this coin is located
