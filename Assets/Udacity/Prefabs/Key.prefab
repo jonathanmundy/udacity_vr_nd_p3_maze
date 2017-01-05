@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33000010078999604}
   - component: {fileID: 23000010968500124}
   - component: {fileID: 114000010113225802}
+  - component: {fileID: 114532837474985136}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -91,3 +92,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2253f7e5b4c14d6ca1d63312bab36c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyPoof: {fileID: 1000012050171414, guid: 3ee12c13f23e54cc294a5598d41816b7, type: 2}
+  door: {fileID: 1000012519150908, guid: f9822e67385a4402d9bf680e50d19d58, type: 2}
+--- !u!114 &114532837474985136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010174503864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114000010113225802}
+          m_MethodName: OnKeyClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
