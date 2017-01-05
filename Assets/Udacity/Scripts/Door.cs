@@ -5,6 +5,7 @@ using UnityEngine;
 public class Door : MonoBehaviour 
 {
     // Create a boolean value called "locked" that can be checked in Update() 
+	public bool locked;
 
     void Update() {
         // If the door is unlocked and it is not fully raised
