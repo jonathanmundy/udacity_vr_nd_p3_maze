@@ -2390,6 +2390,47 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000012519150908, guid: f9822e67385a4402d9bf680e50d19d58,
     type: 2}
   m_PrefabInternal: {fileID: 1781955274}
+--- !u!114 &749665261 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011778842636, guid: f9822e67385a4402d9bf680e50d19d58,
+    type: 2}
+  m_PrefabInternal: {fileID: 1781955274}
+  m_Script: {fileID: 11500000, guid: 39f8a5a2b11c2426cb2a2bea3e825751, type: 3}
+--- !u!82 &749665262 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010069184718, guid: f9822e67385a4402d9bf680e50d19d58,
+    type: 2}
+  m_PrefabInternal: {fileID: 1781955274}
+--- !u!114 &749665263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749665260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 749665261}
+          m_MethodName: DoorStatus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1001 &762056966
 Prefab:
   m_ObjectHideFlags: 0
@@ -5195,6 +5236,31 @@ Prefab:
     - target: {fileID: 114000011778842636, guid: f9822e67385a4402d9bf680e50d19d58,
         type: 2}
       propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010069184718, guid: f9822e67385a4402d9bf680e50d19d58,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011778842636, guid: f9822e67385a4402d9bf680e50d19d58,
+        type: 2}
+      propertyPath: doorOpened
+      value: 
+      objectReference: {fileID: 8300000, guid: e5a423fc890c5445fb9c3b126422891b, type: 3}
+    - target: {fileID: 114000011778842636, guid: f9822e67385a4402d9bf680e50d19d58,
+        type: 2}
+      propertyPath: doorLocked
+      value: 
+      objectReference: {fileID: 8300000, guid: b6a0517e9a9d14b7b8fd6be65f68f1a5, type: 3}
+    - target: {fileID: 114000011778842636, guid: f9822e67385a4402d9bf680e50d19d58,
+        type: 2}
+      propertyPath: doorSoundPlayer
+      value: 
+      objectReference: {fileID: 749665262}
+    - target: {fileID: 82000010069184718, guid: f9822e67385a4402d9bf680e50d19d58,
+        type: 2}
+      propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
